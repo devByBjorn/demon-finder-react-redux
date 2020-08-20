@@ -1,5 +1,5 @@
 import React from 'react'
-import { EditIcon } from '../icons/iconsComponents'
+import { EditIcon } from '../icons/IconsComponents'
 import {
   Modal,
   Container,

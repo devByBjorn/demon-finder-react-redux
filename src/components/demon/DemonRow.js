@@ -4,8 +4,15 @@ import { store } from '../../app'
 import { editInDb, deleteFromDb, populateDbData } from '../../actions/demon'
 import DemonModal from './DemonModal'
 import SinsCheckbox from './SinsCheckbox'
-import { TrashIcon, EditIcon } from '../icons/iconsComponents'
-import { Row, RowLeftSpan, RowRightSpan, HandleDemon, Title, Count } from '../../styled/DemonRowStyled'
+import { TrashIcon, EditIcon } from '../icons/IconsComponents'
+import {
+  Row,
+  RowLeftSpan,
+  RowRightSpan,
+  HandleDemon,
+  Title,
+  Count
+} from '../../styled/DemonRowStyled'
 import { NavLinkStyled } from '../../styled/NavLinkStyled'
 
 const DemonRow = ({ demon }) => {

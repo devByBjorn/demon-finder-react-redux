@@ -1,10 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { trashcan, edit, questionMark, plusSquare, close, arrowLeft, circle } from '../../assets/icons-library/library'
+import {
+  trashcan,
+  edit,
+  questionMark,
+  plusSquare,
+  close,
+  arrowLeft,
+  circle
+} from '../../assets/icons-library/library'
 
 const FontAwesomeIconStyled = styled(FontAwesomeIcon).attrs(props => ({
-  color: props.color,
+  color: props.color, // access theme.text in props???
   fontSize: props.fontSize,
   hovercolor: props.hovercolor
 }))`
