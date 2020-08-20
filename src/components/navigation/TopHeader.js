@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { startLogout } from '../../actions/auth'
-import ToggleTheme from './ToggleTheme'
 import { TopHeaderStyled, } from '../../styled/TopHeaderStyled'
 import { MainButton, MenuControlBtnStyled } from '../../styled/Buttons'
 
@@ -10,7 +9,6 @@ const TopHeader = () => {
   return (
     <TopHeaderStyled>
       <div>
-        { /*<ToggleTheme />*/}
         <MainButton
           data-testid="logout"
           onClick={() => dispatch(startLogout())}>
@@ -23,8 +21,3 @@ const TopHeader = () => {
 
 export default TopHeader
 
-/*
-     <MainButton onClick={toggleMenu}>
-        Menu
-      </MainButton>
-*/
