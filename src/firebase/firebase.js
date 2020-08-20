@@ -1,4 +1,11 @@
-import * as firebase from 'firebase'
+// import core firebase client (required)
+import firebase from '@firebase/app';
+
+// import Firebase Authentication (optional)
+import '@firebase/auth';
+
+// import Firebase Realtime Database (optional)
+import '@firebase/database';
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
