@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Label, Input, Circle, CircleChecked } from '../../styled/SinsCheckBoxStyled'
+import {
+  Label,
+  Input,
+  Circle,
+  CircleChecked
+} from '../../styled/SinsCheckBoxStyled'
 import { CloseIcon } from '../icons/IconsComponents'
 
 const SinsCheckbox = ({ onChange, value, count }) => {
@@ -17,7 +22,6 @@ const SinsCheckbox = ({ onChange, value, count }) => {
     }
 
   }, [count, value])
-
 
   return (
     <label>

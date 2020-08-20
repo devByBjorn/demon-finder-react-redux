@@ -48,8 +48,12 @@ export const AddIcon = styled(NavLink)`
 `
 
 export const TopHeading = styled.h3`
-  font-size: ${({ theme }) => theme.typogrophy.large};
+  font-size: ${({ theme }) => theme.typogrophy.xl};
   text-transform: capitalize;
+
+  @media(max-width: 600px) {
+    font-size: ${({ theme }) => theme.typogrophy.large};
+  }
 `
 
 export const TopRow = styled(Row)`

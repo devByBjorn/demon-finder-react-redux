@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import ExampelList from './ExampelList'
 import {
   Container,
@@ -7,7 +6,6 @@ import {
   TopHeading,
   TopRow,
   TopRowTitle,
-  iconBaseStyle
 } from '../../styled/DemonFinderStyled'
 import {
   RowLeftSpan,
@@ -19,7 +17,7 @@ import {
 const ExampelFinder = () => (
   <Container>
     <Top>
-      <div />
+      <p>* Nothing you do here will be saved, it's just a showcase example.</p>
       <TopHeading>Exampel demons</TopHeading>
     </Top>
     <TopRow>

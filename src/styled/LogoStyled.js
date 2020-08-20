@@ -6,6 +6,7 @@ export const LogoStyled = styled.h1.attrs(props => ({
   left: props.left || 'initial',
   right: props.right || 'initial',
   top: props.top || 'initial',
+  padding: props.padding || '0rem'
 }))`
   position: ${props => props.position};
   bottom: ${props => props.bottom};
@@ -14,5 +15,6 @@ export const LogoStyled = styled.h1.attrs(props => ({
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 1;
+  padding: ${props => props.padding};
   width: 30rem;
 `

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export const AddDemonFormStyled = styled.form`
+export const FormStyled = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,9 +9,8 @@ export const AddDemonFormStyled = styled.form`
     margin-bottom: ${({ theme }) => theme.spacing.large};
   }
 `
-
-export const DemonFormItem = styled.div`
-  padding-bottom: ${({ theme }) => theme.spacing.large};
+export const FormItem = styled.div`
+  padding: ${({ theme }) => theme.spacing.medium} 0;
 `
 const baseInputStyles = css`
   background: transparent;
@@ -47,14 +46,14 @@ const baseInputStyles = css`
   }
 `
 
-export const DemonFormInput = styled.input`
+export const FormInput = styled.input`
   ${baseInputStyles}
 `
 
-export const DemonFormTextArea = styled.textarea`
+export const FormTextArea = styled.textarea`
   ${baseInputStyles}
 `
 
-export const DemonFormError = styled.small`
+export const FormError = styled.small`
   color: #f67e7e;
 `

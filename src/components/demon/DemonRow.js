@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, ReactReduxContext } from 'react-redux'
 import { store } from '../../app'
 import { editInDb, deleteFromDb, populateDbData } from '../../actions/demon'
 import DemonModal from './DemonModal'
@@ -19,6 +19,10 @@ const DemonRow = ({ demon }) => {
   const dispatch = useDispatch()
   const [count, setCount] = useState(0)
   const [showModal, setShowModal] = useState(false)
+
+  const activePath = '/demons'
+  const pathName = window.location.pathname
+  const pathIsActive = pathName === activePath
 
   useEffect(() => {
     setCount(demon.sins)
@@ -57,13 +61,13 @@ const DemonRow = ({ demon }) => {
         <HandleDemon>
           <div>
             <TrashIcon
-              onClick={handleDelete}
+              onClick={pathIsActive ? handleDelete : false}
               hovercolor='#f67e7e'
             />
           </div>
           <div>
             <NavLinkStyled
-              to={`edit/${demon.id}`}
+              to={pathIsActive ? `edit/${demon.id}` : 'example'}
             ><EditIcon hovercolor="#ffc600" />
             </NavLinkStyled>
           </div>

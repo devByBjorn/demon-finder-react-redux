@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { editInDb, deleteFromDb, populateDbData } from '../actions/demon'
+import { editInDb, populateDbData } from '../actions/demon'
 import AddDemonForm from '../components/demon/AddDemonForm'
 import MyDemonsNavigation from '../components/navigation/MyDemonsNavigation'
 

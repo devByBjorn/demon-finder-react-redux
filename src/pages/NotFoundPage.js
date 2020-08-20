@@ -4,7 +4,7 @@ import MyDemonsNavigation from '../components/navigation/MyDemonsNavigation'
 const NotFoundPage = () => (
   <>
     <MyDemonsNavigation />
-    <p>Not Found Page</p>
+    <h3>There is no page with this URL. Get back to your demons.</h3>
   </>
 )
 

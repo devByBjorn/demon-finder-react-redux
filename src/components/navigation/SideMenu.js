@@ -47,7 +47,7 @@ const SideMenu = () => {
         textContent={textContent}
       />
       <SideMenuStyled style={{ width: width }}>
-        <Logo />
+        <Logo padding="0 5rem" />
         <SideMenuNav>
           <ul>
             <li>
@@ -57,7 +57,7 @@ const SideMenu = () => {
               <NavLinkStyled to="/add">Add demon</NavLinkStyled>
             </li>
             <li>
-              <NavLinkStyled to="/exampel">Exampel</NavLinkStyled>
+              <NavLinkStyled to="/example">Example</NavLinkStyled>
             </li>
             <li>
               <NavLinkStyled to="/original">Original demon finder</NavLinkStyled>

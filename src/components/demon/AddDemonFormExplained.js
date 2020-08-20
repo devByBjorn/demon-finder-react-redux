@@ -17,9 +17,9 @@ const AddDemonFormExplained = () => (
     </ExplinationItem>
     <ExplinationItem>
       <h4>What is the core issue of this demon? </h4>
-      <Paragrapgh>This one is important. You should really sit down and think about what is making you act on the demands of this demon. </Paragrapgh>
+      <Paragrapgh>This one is important. You should really sit down and think about what is making you act on the demands of this demon. Write it down.</Paragrapgh>
       <Paragrapgh>
-        <span>Exampel:</span> When taking a loss, Eric feels an instant urge to make that lost money back, quickly. Not only dese he must make it back quickly, he also must make it back in that exact market. He acts out of greed and out of fear of being wrong.
+        <span>Exampel:</span> When taking a loss, Eric feels an instant urge to make that lost money back, quickly. Not only dese he must make it back quickly, he also must make it back in that exact market. After some thinking he realises that he acts out of greed and out of fear of being wrong.
       </Paragrapgh>
     </ExplinationItem>
 

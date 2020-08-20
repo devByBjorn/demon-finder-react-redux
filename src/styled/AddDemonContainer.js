@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const AddDemonContainer = styled.div`
   display: flex;
   margin: ${({ theme }) => theme.spacing.large};
+  width: 100%;
 
   @media(max-width: 850px) {
     flex-direction: column-reverse;
@@ -11,7 +12,6 @@ export const AddDemonContainer = styled.div`
 `
 
 export const Item = styled.div`
-
   flex: 1;
 
   :first-child {

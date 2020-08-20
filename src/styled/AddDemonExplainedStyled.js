@@ -14,7 +14,8 @@ export const ExplinationItem = styled.div`
 `
 export const Paragrapgh = styled.p`
   margin-top: ${({ theme }) => theme.spacing.xs};
-  max-width: 90%;
+  max-width: 60rem;
+  text-align: justify;
 
   @media(max-width: 850px) {
     max-width: 100%;

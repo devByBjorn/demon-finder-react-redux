@@ -1,8 +1,5 @@
 import React from 'react'
-import {
-  Router,
-  Switch,
-} from 'react-router-dom'
+import { Router, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import PrivateRoute from './PrivateRoute'
 import PublicRoute from './PublicRoute'
@@ -13,7 +10,6 @@ import EditDemonPage from '../pages/EditDemonPage'
 import NotFoundPage from '../pages/NotFoundPage'
 import ExampelDemonPage from '../pages/ExampelDemonPage'
 import OriginalDemonPage from '../pages/OriginalDemonPage'
-
 
 /* 
   We have two type of customized Routes here: PrivateRoute and PublicRoute. The PrivateRoute is used when you create a page that only should be available for a user in loged in state. The PublicRoute is used when you create a page that should be available for loged out users. See PrivateRoute.js and PublicRoute.js for conditonal rendering of components depending on users loged in/out state. 
@@ -32,9 +28,8 @@ const AppRouter = () => (
       <PrivateRoute path="/demons" component={OverviewDemonsPage} />
       <PrivateRoute path="/add" component={AddDemonPage} />
       <PrivateRoute path="/edit/:id" component={EditDemonPage} />
-      <PrivateRoute path="/exampel" component={ExampelDemonPage} />
+      <PrivateRoute path="/example" component={ExampelDemonPage} />
       <PrivateRoute path="/original" component={OriginalDemonPage} />
-
       <PublicRoute component={NotFoundPage} />
     </Switch>
   </Router>
