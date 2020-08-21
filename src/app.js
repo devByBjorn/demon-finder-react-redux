@@ -10,6 +10,7 @@ import { populateDbData } from './actions/demon'
 import GlobalStyles from './styled/GlobalStyles'
 import { designTheme, colorTheme } from './styled/themes'
 import { Container, MainContent } from './styled/MainContentContainers'
+import Loader from './components/utils/Loader'
 
 /* 
   store
@@ -54,7 +55,7 @@ const renderApp = () => {
 }
 
 // When wating for the component in our AppRouter to render the loading page appears on the screen
-ReactDOM.render('...loading', document.getElementById('app'))
+ReactDOM.render(<Loader />, document.getElementById('app'))
 
 // Firebase authentication
 /* Here we use the store props dispatch. "This is the only way to trigger state change". 

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  background: ${({ theme }) => theme.mainBg};
   display: flex;
   margin-top: ${({ theme }) => theme.spacing.large};
   min-height: 100vh;

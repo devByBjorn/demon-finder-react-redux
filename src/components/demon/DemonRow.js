@@ -59,7 +59,7 @@ const DemonRow = ({ demon }) => {
         <HandleDemon>
           <div>
             <TrashIcon
-              onClick={pathMatch ? handleDelete : false}
+              onClick={pathMatch ? handleDelete : null}
               hovercolor='#f67e7e'
             />
           </div>
