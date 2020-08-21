@@ -17,8 +17,13 @@ export const Content = styled.div`
   }
 
   p {
+    font-size: 2rem;
     margin-top: ${({ theme }) => theme.spacing.small};
     max-width: 53.5rem;
+  }
+
+  span {
+    color: ${({ theme }) => theme.standOutColor};
   }
 `
 

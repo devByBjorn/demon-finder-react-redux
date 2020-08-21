@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { useDispatch, ReactReduxContext } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { store } from '../../app'
 import { editInDb, deleteFromDb, populateDbData } from '../../actions/demon'
+import useUrlPath from '../../hooks/useUrlPath'
 import DemonModal from './DemonModal'
 import SinsCheckbox from './SinsCheckbox'
 import { TrashIcon, EditIcon } from '../icons/IconsComponents'
@@ -17,12 +18,9 @@ import { NavLinkStyled } from '../../styled/NavLinkStyled'
 
 const DemonRow = ({ demon }) => {
   const dispatch = useDispatch()
+  const pathMatch = useUrlPath('/demons')
   const [count, setCount] = useState(0)
   const [showModal, setShowModal] = useState(false)
-
-  const activePath = '/demons'
-  const pathName = window.location.pathname
-  const pathIsActive = pathName === activePath
 
   useEffect(() => {
     setCount(demon.sins)
@@ -61,15 +59,22 @@ const DemonRow = ({ demon }) => {
         <HandleDemon>
           <div>
             <TrashIcon
-              onClick={pathIsActive ? handleDelete : false}
+              onClick={pathMatch ? handleDelete : false}
               hovercolor='#f67e7e'
             />
           </div>
           <div>
-            <NavLinkStyled
-              to={pathIsActive ? `edit/${demon.id}` : 'example'}
-            ><EditIcon hovercolor="#ffc600" />
-            </NavLinkStyled>
+            {pathMatch
+              ? (<NavLinkStyled
+                to={`edit/${demon.id}`}
+              ><EditIcon hovercolor="#ffc600" />
+              </NavLinkStyled>
+              )
+              : (
+                <EditIcon hovercolor="#ffc600" />
+              )
+            }
+
           </div>
         </HandleDemon>
         <Title onClick={handleModal}
@@ -80,6 +85,7 @@ const DemonRow = ({ demon }) => {
         demon={demon}
         handleModal={handleModal}
         showModal={showModal}
+        pathMatch={pathMatch}
       />
 
       <RowRightSpan>

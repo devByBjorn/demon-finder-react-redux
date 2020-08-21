@@ -20,6 +20,15 @@ export const Top = styled.div`
   justify-content: space-between;
   padding: ${({ theme }) => theme.spacing.medium} ${({ theme }) => theme.spacing.small};
   width: 100%;
+
+  /* text in example demon*/
+  p {
+    margin-right: ${({ theme }) => theme.spacing.small};
+
+    @media(max-width: 400px) {
+      font-size: ${({ theme }) => theme.typogrophy.small};
+    }
+  }
 `
 export const iconBaseStyle = css`
   border-radius: 5px;
@@ -42,11 +51,9 @@ export const iconBaseStyle = css`
     font-size: ${({ theme }) => theme.typogrophy.small};
   }
 `
-
 export const AddIcon = styled(NavLink)`
   ${iconBaseStyle}
 `
-
 export const TopHeading = styled.h3`
   font-size: ${({ theme }) => theme.typogrophy.xl};
   text-transform: capitalize;
@@ -55,7 +62,6 @@ export const TopHeading = styled.h3`
     font-size: ${({ theme }) => theme.typogrophy.large};
   }
 `
-
 export const TopRow = styled(Row)`
   align-items: center;
   border-bottom: 2px solid ${({ theme }) => theme.contrast};
@@ -74,7 +80,6 @@ export const TopRow = styled(Row)`
     font-size: ${({ theme }) => theme.typogrophy.medium};
   }
 `
-
 export const TopRowTitle = styled(Title)`
   color: ${({ theme }) => theme.text};
   font-size: ${({ theme }) => theme.typogrophy.large};

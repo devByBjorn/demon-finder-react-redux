@@ -10,7 +10,12 @@ export const FormStyled = styled.form`
   }
 `
 export const FormItem = styled.div`
+  min-width: 60rem;
   padding: ${({ theme }) => theme.spacing.medium} 0;
+
+  @media(max-width: 1050px) {
+    min-width: 40rem;
+  }
 `
 const baseInputStyles = css`
   background: transparent;

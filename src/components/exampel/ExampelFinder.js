@@ -17,7 +17,7 @@ import {
 const ExampelFinder = () => (
   <Container>
     <Top>
-      <p>* Nothing you do here will be saved, it's just a showcase example.</p>
+      <p>*Nothing you do here will be saved, it's just a showcase example.</p>
       <TopHeading>Exampel demons</TopHeading>
     </Top>
     <TopRow>

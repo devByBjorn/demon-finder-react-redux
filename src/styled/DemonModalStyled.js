@@ -16,9 +16,8 @@ export const Modal = styled(ReactModal)`
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
-  margin: 0 auto;
   height: 100%;
   width: 95%;
   padding: ${({ theme }) => theme.spacing.medium};
@@ -28,7 +27,8 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: ${({ theme }) => theme.spacing.medium};
+  margin-bottom: ${({ theme }) => theme.spacing.medium};
+  margin-top: ${({ theme }) => theme.spacing.large};
   max-width: 50rem;
   width: 70%;
 `

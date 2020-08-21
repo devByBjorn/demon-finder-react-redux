@@ -19,11 +19,11 @@ const LoginPage = () => {
       <Content>
         <div>
           <h1>Hi trader!</h1>
-          <p>Welcome to the Demon Finder; a tool that lets you write down and keep track of your trading errors. The tool was introduced to me by Tom Dante a.k.a <LinkStyled target="blank" to="https://twitter.com/trader_dante">Trader Dante</LinkStyled>, and it has helped me alot in my own trading journey.</p>
+          <p>Welcome to the <span>Demon Finder</span>, a tool that lets you keep track of your trading mistakes. The tool was introduced to me by Tom Dante (follow <LinkStyled target="blank" to="https://twitter.com/trader_dante">@Trader_Dante</LinkStyled> on twitter), and it has helped me alot in my own trading journey.</p>
           <p>
             Hopefully, the Demon Finder can help you too, and have a positive impact on your trading.
           </p>
-          <p>Start tackling those demons, log in below with your twitter or google account.</p>
+          <p>Log in below with twitter or google and start tackling those demons, .</p>
         </div>
         <div>
           <h5>Login:</h5>

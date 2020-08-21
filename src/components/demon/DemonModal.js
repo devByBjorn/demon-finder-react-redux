@@ -11,7 +11,7 @@ import {
 import { NavLinkStyled } from '../../styled/NavLinkStyled'
 import { MainButton } from '../../styled/Buttons'
 
-const DemonModal = ({ demon, handleModal, showModal }) => (
+const DemonModal = ({ demon, handleModal, showModal, pathMatch }) => (
   <Modal
     style={{
       overlay: {
@@ -28,6 +28,7 @@ const DemonModal = ({ demon, handleModal, showModal }) => (
         onClick={handleModal}
       >Close
       </MainButton>
+
       <Content>
         <div>
           <Title>{demon.title}</Title>
@@ -37,12 +38,19 @@ const DemonModal = ({ demon, handleModal, showModal }) => (
           <Header>Management</Header>
           <Paragraph>{demon.manage}</Paragraph>
         </div>
-        <div>
-          <NavLinkStyled to={`edit/${demon.id}`}>
-            <EditIcon />
-          </NavLinkStyled>
-        </div>
       </Content>
+      <div>
+        {pathMatch
+          ? (
+            <NavLinkStyled to={`edit/${demon.id}`}>
+              <EditIcon fontSize="3rem" />
+            </NavLinkStyled>
+          )
+          : (
+            <EditIcon fontSize="3rem" />
+          )
+        }
+      </div>
     </Container>
   </Modal>
 )

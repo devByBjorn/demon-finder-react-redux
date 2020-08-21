@@ -62,6 +62,9 @@ const SideMenu = () => {
             <li>
               <NavLinkStyled to="/original">Original demon finder</NavLinkStyled>
             </li>
+            <li>
+              <NavLinkStyled to="/contact">Contact</NavLinkStyled>
+            </li>
           </ul>
         </SideMenuNav>
       </SideMenuStyled>

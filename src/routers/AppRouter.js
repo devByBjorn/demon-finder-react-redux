@@ -10,6 +10,7 @@ import EditDemonPage from '../pages/EditDemonPage'
 import NotFoundPage from '../pages/NotFoundPage'
 import ExampelDemonPage from '../pages/ExampelDemonPage'
 import OriginalDemonPage from '../pages/OriginalDemonPage'
+import ContactPage from '../pages/ContactPage'
 
 /* 
   We have two type of customized Routes here: PrivateRoute and PublicRoute. The PrivateRoute is used when you create a page that only should be available for a user in loged in state. The PublicRoute is used when you create a page that should be available for loged out users. See PrivateRoute.js and PublicRoute.js for conditonal rendering of components depending on users loged in/out state. 
@@ -30,7 +31,8 @@ const AppRouter = () => (
       <PrivateRoute path="/edit/:id" component={EditDemonPage} />
       <PrivateRoute path="/example" component={ExampelDemonPage} />
       <PrivateRoute path="/original" component={OriginalDemonPage} />
-      <PublicRoute component={NotFoundPage} />
+      <PrivateRoute path="/contact" component={ContactPage} />
+      <PrivateRoute component={NotFoundPage} />
     </Switch>
   </Router>
 )
