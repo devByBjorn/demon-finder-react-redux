@@ -15,31 +15,33 @@ import {
 } from '../../styled/DemonRowStyled'
 
 const ExampelFinder = () => (
-  <Container>
-    <Top>
-      <p>*Nothing you do here will be saved, it's just a showcase example.</p>
-      <TopHeading>Exampel demons</TopHeading>
-    </Top>
-    <TopRow>
-      <RowLeftSpan>
-        <HandleDemon />
-        <TopRowTitle>
-          Demon #
+  <div>
+    <Container>
+      <Top>
+        <p>*Nothing you do here will be saved, it's just a showcase example.</p>
+        <TopHeading>Exampel demons</TopHeading>
+      </Top>
+      <TopRow>
+        <RowLeftSpan>
+          <HandleDemon />
+          <TopRowTitle>
+            Demon #
         </TopRowTitle>
-      </RowLeftSpan>
-      <RowRightSpan>
-        <Count>1</Count>
-        <Count>2</Count>
-        <Count>3</Count>
-        <Count>4</Count>
-        <Count>5</Count>
-        <Count>6</Count>
-        <Count>7</Count>
-        <Count style={{ color: '#f67e7e' }}>Stop</Count>
-      </RowRightSpan>
-    </TopRow>
-    <ExampelList />
-  </Container>
+        </RowLeftSpan>
+        <RowRightSpan>
+          <Count>1</Count>
+          <Count>2</Count>
+          <Count>3</Count>
+          <Count>4</Count>
+          <Count>5</Count>
+          <Count>6</Count>
+          <Count>7</Count>
+          <Count style={{ color: '#f67e7e' }}>Stop</Count>
+        </RowRightSpan>
+      </TopRow>
+      <ExampelList />
+    </Container>
+  </div>
 )
 
 export default ExampelFinder

@@ -1,13 +1,15 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
-export const LinkStyled = styled(Link)`
-
-  color: ${({ theme }) => theme.text};
+export const LinkStyled = styled.a.attrs(props => ({
+  color: props.color || 'hsl(0, 0%, 100%)',
+  hoverColor: props.hoverColor || '#ffc600'
+}))`
+  color: ${props => props.color};
   transition: text-dexoration .2s ease;
 
   :hover {
-    color: ${({ theme }) => theme.standOutColor};
+    color: ${props => props.hoverColor};
+    cursor: pointer;
     text-decoration: transparent;
   }
 `

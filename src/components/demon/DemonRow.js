@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { store } from '../../app'
-import { editInDb, deleteFromDb, populateDbData } from '../../actions/demon'
+import {
+  editInDb,
+  deleteFromDb,
+  populateDbData
+} from '../../actions/demon'
 import useUrlPath from '../../hooks/useUrlPath'
 import DemonModal from './DemonModal'
 import SinsCheckbox from './SinsCheckbox'
@@ -77,7 +81,7 @@ const DemonRow = ({ demon }) => {
 
           </div>
         </HandleDemon>
-        <Title onClick={handleModal}
+        <Title onClick={pathMatch ? handleModal : null}
         >{demon.title}</Title>
       </RowLeftSpan>
 
@@ -99,7 +103,7 @@ const DemonRow = ({ demon }) => {
           </Count>
         ))}
       </RowRightSpan>
-    </Row>
+    </Row >
   )
 }
 

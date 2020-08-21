@@ -16,6 +16,10 @@ export const FormItem = styled.div`
   @media(max-width: 1050px) {
     min-width: 40rem;
   }
+
+  @media(max-width: 600px) {
+    min-width: 20rem;
+  }
 `
 const baseInputStyles = css`
   background: transparent;
