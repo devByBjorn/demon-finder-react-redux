@@ -7,7 +7,7 @@ import {
   populateDbData
 } from '../../actions/demon'
 import useUrlPath from '../../hooks/useUrlPath'
-import DemonModal from './DemonModal'
+//import DemonModal from './DemonModal'
 import SinsCheckbox from './SinsCheckbox'
 import { TrashIcon, EditIcon } from '../icons/IconsComponents'
 import {
@@ -15,7 +15,6 @@ import {
   RowLeftSpan,
   RowRightSpan,
   HandleDemon,
-  HandleDemonMobile,
   Title,
   Count
 } from '../../styled/DemonRowStyled'
@@ -25,7 +24,7 @@ const DemonRow = ({ demon }) => {
   const dispatch = useDispatch()
   const pathMatch = useUrlPath('/demons')
   const [count, setCount] = useState(0)
-  const [showModal, setShowModal] = useState(false)
+  //const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
     setCount(demon.sins)
@@ -34,11 +33,11 @@ const DemonRow = ({ demon }) => {
 
   const sins = [1, 2, 3, 4, 5, 6, 7, 8]
 
-  const handleModal = () => {
-    showModal === false
-      ? setShowModal(true)
-      : setShowModal(false)
-  }
+  // const handleModal = () => {
+  //   showModal === false
+  //     ? setShowModal(true)
+  //     : setShowModal(false)
+  // }
 
   const handleDelete = () => {
     const { id } = demon
@@ -79,39 +78,17 @@ const DemonRow = ({ demon }) => {
                 <EditIcon hovercolor="#ffc600" />
               )
             }
-
           </div>
         </HandleDemon>
-        <Title onClick={pathMatch ? handleModal : null}
-        >{demon.title}</Title>
-        <HandleDemonMobile>
-          <div>
-            <TrashIcon
-              onClick={pathMatch ? handleDelete : null}
-              hovercolor='#f67e7e'
-            />
-          </div>
-          <div>
-            {pathMatch
-              ? (<NavLinkStyled
-                to={`edit/${demon.id}`}
-              ><EditIcon hovercolor="#ffc600" />
-              </NavLinkStyled>
-              )
-              : (
-                <EditIcon hovercolor="#ffc600" />
-              )
-            }
-          </div>
-        </HandleDemonMobile>
+        <Title>{demon.title}</Title>
       </RowLeftSpan>
 
-      <DemonModal
+      { /* <DemonModal
         demon={demon}
         handleModal={handleModal}
         showModal={showModal}
         pathMatch={pathMatch}
-      />
+    />*/}
 
       <RowRightSpan>
         {sins.map(sin => (

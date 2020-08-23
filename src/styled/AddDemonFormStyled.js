@@ -27,6 +27,7 @@ const baseInputStyles = css`
   border-bottom: 1px solid ${({ theme }) => theme.text};
   color: ${({ theme }) => theme.text};
   font-size: ${({ theme }) => theme.typogrophy.medium};
+  outline: none;
   padding: ${({ theme }) => theme.spacing.xs};
   transition: border .3s ease;
   width: 95%;

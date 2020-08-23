@@ -1,10 +1,12 @@
 import React from 'react'
 import LinkStyled from '../styled/LinkStyled'
-import { LoginWrapper, Content } from '../styled/LoginPageStyled'
+import { LoginWrapper } from '../styled/LoginPageStyled'
+import { ContactContent } from '../styled/ContactPageStyled'
+import ArrowNavigation from '../components/navigation/ArrowNavigation'
 
 const ContactPage = () => (
   <div>
-    <Content>
+    <ContactContent>
       <div>
         <h1>Contact!</h1>
         <p>If you have any ideas of how to improve the demon finder, or if you are experiencing any issues, please reach out.</p>
@@ -17,7 +19,8 @@ const ContactPage = () => (
           </LinkStyled>
         </LoginWrapper>
       </div>
-    </Content>
+    </ContactContent>
+    <ArrowNavigation />
   </div>
 )
 

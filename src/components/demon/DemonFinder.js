@@ -6,6 +6,7 @@ import {
   TopHeading,
   TopRow,
   TopRowTitle,
+  TopRowLeftSpan
 } from '../../styled/DemonFinderStyled'
 import { AddIcon } from '../../styled/IconsStyled'
 import {
@@ -27,14 +28,13 @@ const DemonFinder = () => (
         </div>
         <TopHeading>My demons</TopHeading>
       </Top>
-
       <TopRow>
-        <RowLeftSpan>
+        <TopRowLeftSpan>
           <HandleDemon />
           <TopRowTitle>
             Demon #
         </TopRowTitle>
-        </RowLeftSpan>
+        </TopRowLeftSpan>
         <RowRightSpan>
           <Count>1</Count>
           <Count>2</Count>

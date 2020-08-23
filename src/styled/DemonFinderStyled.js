@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import { NavLink } from 'react-router-dom'
-import { Row, Title } from './DemonRowStyled'
+import { Row, Title, RowLeftSpan } from './DemonRowStyled'
 
 export const Container = styled.div`
   background: ${({ theme }) => theme.mainBg};
@@ -77,6 +77,13 @@ export const TopRow = styled(Row)`
   @media(max-width: 850px) {
     align-items: initial;
     font-size: ${({ theme }) => theme.typogrophy.medium};
+  }
+`
+export const TopRowLeftSpan = styled(RowLeftSpan)`
+  @media(max-width: 600px) {
+    :first-child {
+      display: none;
+    }
   }
 `
 export const TopRowTitle = styled(Title)`

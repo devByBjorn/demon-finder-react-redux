@@ -32,6 +32,7 @@ export const RowLeftSpan = styled.div`
   @media(max-width: 600px) {
     align-items: initial;
     border-bottom: 1px solid ${({ theme }) => theme.mainBg};
+    flex-direction: row-reverse;
     padding: ${({ theme }) => theme.spacing.xs};
   }
 `
@@ -44,28 +45,16 @@ export const HandleDemon = styled.div`
   }
 
   @media(max-width: 600px) {
-    display: none;
+    justify-content: flex-end;
   }
 `
-export const HandleDemonMobile = styled(HandleDemon)`
-  @media(max-width: 600px) {
-    display: flex;
-  } 
-  
-  @media(max-height: 600px) {
-    display: none;
-  } 
-`
-
 export const Title = styled.h5`
   flex: 2;
   color: ${({ theme }) => theme.standOutColor};
-  cursor: pointer;
   font-size: ${({ theme }) => theme.typogrophy.medium};
   text-transform: uppercase;
   white-space: no-wrap;
 `
-
 //Right span
 export const RowRightSpan = styled.div`
   flex: 2;
@@ -75,7 +64,6 @@ export const RowRightSpan = styled.div`
     padding: ${({ theme }) => theme.spacing.xs};
   }
 `
-
 export const Count = styled.div`
   flex: 1;
   display: flex;
