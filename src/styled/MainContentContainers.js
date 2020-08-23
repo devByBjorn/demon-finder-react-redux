@@ -15,10 +15,10 @@ export const Container = styled.div`
 `
 
 export const MainContent = styled.main`
-display: flex;
-justify-content: center;
-margin: ${({ theme }) => theme.spacing.xl} ${({ theme }) => theme.spacing.medium};
-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: ${({ theme }) => theme.spacing.xl} ${({ theme }) => theme.spacing.medium};
+  width: 100%;
 
 @media(max-width: 600px) {
   margin: 0 ${({ theme }) => theme.spacing.xs};

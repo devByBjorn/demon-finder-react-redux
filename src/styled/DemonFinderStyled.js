@@ -6,10 +6,15 @@ export const Container = styled.div`
   background: ${({ theme }) => theme.mainBg};
   border-radius: 20px;
   box-shadow: ${({ theme }) => theme.boxshadow};
+  margin: ${({ theme }) => theme.spacing.large};
   max-width: 95vw;
   min-height: 61rem;
   width: 140rem;
   padding-bottom: 2rem;
+
+  @media(max-width: 850px) {
+    margin: ${({ theme }) => theme.spacing.small};
+  }
 `
 export const Top = styled.div`
   background: ${({ theme }) => theme.mainBg};
