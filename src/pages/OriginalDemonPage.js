@@ -1,10 +1,10 @@
 import React from 'react'
 import OriginalDemon from '../components/original-demon/OrignalDemon'
-import MyDemonsNavigation from '../components/navigation/MyDemonsNavigation'
+import ArrowNavigation from '../components/navigation/ArrowNavigation'
 
 const OriginalDemonPage = () => (
   <>
-    <MyDemonsNavigation />
+    <ArrowNavigation />
     <OriginalDemon />
   </>
 )

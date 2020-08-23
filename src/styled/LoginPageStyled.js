@@ -4,7 +4,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 60vh;
+  min-height: 60vh;
   max-width: 90rem;
 
   h1 {
@@ -17,13 +17,16 @@ export const Content = styled.div`
   }
 
   p {
-    font-size: 2rem;
     margin-top: ${({ theme }) => theme.spacing.small};
     max-width: 53.5rem;
   }
 
   span {
     color: ${({ theme }) => theme.standOutColor};
+  }
+
+  @media(max-width: 600px) {
+    margin-top: ${({ theme }) => theme.spacing.xxl};
   }
 `
 

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import CircleIcon from '../components/icons/IconsComponents'
 
 export const Row = styled.div`
   display: flex;
@@ -33,7 +32,6 @@ export const RowLeftSpan = styled.div`
   @media(max-width: 600px) {
     align-items: initial;
     border-bottom: 1px solid ${({ theme }) => theme.mainBg};
-    flex-direction: column-reverse;
     padding: ${({ theme }) => theme.spacing.xs};
   }
 `
@@ -44,7 +42,21 @@ export const HandleDemon = styled.div`
   div:first-child {
     margin-right: 1rem;
   }
+
+  @media(max-width: 600px) {
+    display: none;
+  }
 `
+export const HandleDemonMobile = styled(HandleDemon)`
+  @media(max-width: 600px) {
+    display: flex;
+  } 
+  
+  @media(max-height: 600px) {
+    display: none;
+  } 
+`
+
 export const Title = styled.h5`
   flex: 2;
   color: ${({ theme }) => theme.standOutColor};
@@ -52,11 +64,6 @@ export const Title = styled.h5`
   font-size: ${({ theme }) => theme.typogrophy.medium};
   text-transform: uppercase;
   white-space: no-wrap;
-
-  @media(max-width: 600px) {
-    flex: 1;
-    margin-bottom: ${({ theme }) => theme.spacing.xs};
-  }
 `
 
 //Right span

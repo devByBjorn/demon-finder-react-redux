@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addToDb, populateDbData } from '../actions/demon'
+import { addToDb, } from '../actions/demon'
 import AddDemonForm from '../components/demon/AddDemonForm'
 import AddDemonFormExplained from '../components/demon/AddDemonFormExplained'
-import MyDemonsNavigation from '../components/navigation/MyDemonsNavigation'
+import ArrowNavigation from '../components/navigation/ArrowNavigation'
 import { AddDemonContainer, Item } from '../styled/AddDemonContainer'
 
 const AddDemonPage = ({ history }) => {
@@ -16,7 +16,7 @@ const AddDemonPage = ({ history }) => {
 
   return (
     <>
-      <MyDemonsNavigation />
+      <ArrowNavigation />
       <AddDemonContainer>
         <Item>
           <h3>Demon components</h3>

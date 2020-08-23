@@ -1,9 +1,9 @@
 import React from 'react'
-import MyDemonsNavigation from '../components/navigation/MyDemonsNavigation'
+import ArrowNavigation from '../components/navigation/ArrowNavigation'
 
 const NotFoundPage = () => (
   <>
-    <MyDemonsNavigation />
+    <ArrowNavigation />
     <h3>404: There is no page with this URL.</h3>
   </>
 )

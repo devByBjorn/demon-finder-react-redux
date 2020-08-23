@@ -6,15 +6,10 @@ export const Container = styled.div`
   background: ${({ theme }) => theme.mainBg};
   border-radius: 20px;
   box-shadow: ${({ theme }) => theme.boxshadow};
-  margin-top: ${({ theme }) => theme.spacing.large};
   max-width: 95vw;
   min-height: 61rem;
   width: 140rem;
   padding-bottom: 2rem;
-
-  @media(max-height: 600px) {
-    margin-top: ${({ theme }) => theme.spacing.medium};
-  }
 `
 export const Top = styled.div`
   background: ${({ theme }) => theme.mainBg};
@@ -26,11 +21,10 @@ export const Top = styled.div`
   padding: ${({ theme }) => theme.spacing.medium} ${({ theme }) => theme.spacing.small};
   width: 100%;
 
-  /* text in example demon*/
   p {
     margin-right: ${({ theme }) => theme.spacing.small};
 
-    @media(max-width: 400px) {
+    @media(max-width: 600px) {
       font-size: 1.2rem;
     }
   }

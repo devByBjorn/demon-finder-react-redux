@@ -15,6 +15,7 @@ import {
   RowLeftSpan,
   RowRightSpan,
   HandleDemon,
+  HandleDemonMobile,
   Title,
   Count
 } from '../../styled/DemonRowStyled'
@@ -83,6 +84,26 @@ const DemonRow = ({ demon }) => {
         </HandleDemon>
         <Title onClick={pathMatch ? handleModal : null}
         >{demon.title}</Title>
+        <HandleDemonMobile>
+          <div>
+            <TrashIcon
+              onClick={pathMatch ? handleDelete : null}
+              hovercolor='#f67e7e'
+            />
+          </div>
+          <div>
+            {pathMatch
+              ? (<NavLinkStyled
+                to={`edit/${demon.id}`}
+              ><EditIcon hovercolor="#ffc600" />
+              </NavLinkStyled>
+              )
+              : (
+                <EditIcon hovercolor="#ffc600" />
+              )
+            }
+          </div>
+        </HandleDemonMobile>
       </RowLeftSpan>
 
       <DemonModal

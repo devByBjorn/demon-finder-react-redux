@@ -6,6 +6,7 @@ export const LinkStyled = styled.a.attrs(props => ({
 }))`
   color: ${props => props.color};
   transition: text-dexoration .2s ease;
+  text-decoration: underline;
 
   :hover {
     color: ${props => props.hoverColor};

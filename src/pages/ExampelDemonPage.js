@@ -1,10 +1,10 @@
 import React from 'react'
 import ExampelFinder from '../components/exampel/ExampelFinder'
-import MyDemonsNavigation from '../components/navigation/MyDemonsNavigation'
+import ArrowNavigation from '../components/navigation/ArrowNavigation'
 
 const ExampelDemonPage = () => (
   <>
-    <MyDemonsNavigation />
+    <ArrowNavigation />
     <ExampelFinder />
   </>
 )

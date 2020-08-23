@@ -1,17 +1,17 @@
 import React from 'react'
-import { MyDemonsNavigationStyled } from '../../styled/MyDemonsNavigationStyled'
+import { ArrowNavigationStyled } from '../../styled/ArrowNavigationStyled'
 import { NavLinkStyled } from '../../styled/NavLinkStyled'
 import { ArrowLeftIcon } from '../icons/IconsComponents'
 
-const MyDemonsNavigation = () => (
-  <MyDemonsNavigationStyled>
+const ArrowNavigation = () => (
+  <ArrowNavigationStyled>
     <NavLinkStyled to="/demons">
       <ArrowLeftIcon
         hovercolor='#ffc600'
       />
     </NavLinkStyled>
-  </MyDemonsNavigationStyled>
+  </ArrowNavigationStyled>
 )
 
 
-export default MyDemonsNavigation
+export default ArrowNavigation

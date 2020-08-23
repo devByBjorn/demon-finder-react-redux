@@ -26,6 +26,12 @@ export const TopHeaderStyled = styled.header`
     height: 6rem;
     padding: 0 ${({ theme }) => theme.spacing.medium};
   }
+
+  @media(max-width: 600px) {
+    top: initial;
+    bottom: 0;
+  }
+
 `
 
 // Found in Sidemenu component
@@ -43,5 +49,10 @@ export const MenuControlBtnStyled = styled(MainButton)`
   @media(max-height: 800px) {
     left: 3.375rem;
     top: 13px;
+  }
+
+  @media(max-width: 600px) {
+    top: initial;
+    bottom: 13px;
   }
 `

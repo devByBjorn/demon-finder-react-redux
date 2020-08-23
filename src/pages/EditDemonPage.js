@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { editInDb, populateDbData } from '../actions/demon'
 import AddDemonForm from '../components/demon/AddDemonForm'
-import MyDemonsNavigation from '../components/navigation/MyDemonsNavigation'
+import ArrowNavigation from '../components/navigation/ArrowNavigation'
 
 const EditDemonPage = ({ match, history }) => {
   const id = match.params.id
@@ -22,7 +22,7 @@ const EditDemonPage = ({ match, history }) => {
 
   return (
     <>
-      <MyDemonsNavigation />
+      <ArrowNavigation />
       <AddDemonForm
         demon={demon}
         handleAddDemon={handleEdit}

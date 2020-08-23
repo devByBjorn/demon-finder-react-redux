@@ -7,7 +7,7 @@ export const AddDemonContainer = styled.div`
 
   @media(max-width: 850px) {
     flex-direction: column-reverse;
-    margin: ${({ theme }) => theme.spacing.medium} ${({ theme }) => theme.spacing.small};
+    margin: 0 ${({ theme }) => theme.spacing.small};
   }
 `
 
